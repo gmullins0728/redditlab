@@ -1,0 +1,16 @@
+<main>
+    <section>
+        <div class="container">
+        <ul *ngFor="let dataTitle of responseData.data.children | slice: 0:10">
+            <div class="title">TITLE: {{ dataTitle.data.title }} </div>
+            <img [src]="dataTitle.data.thumbnail" height="150px" width="150px"/>
+            <div a ng-href="url"> {{ dataTitle.data.url }} </div>
+        </ul>
+        </div>
+    </section>
+</main>
+
+
+
+
+
